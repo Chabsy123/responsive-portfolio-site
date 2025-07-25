@@ -1,51 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- icon link from remix icons -->
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- link to css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Portfolio | Chukwu Sydney</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header -->
     <header class="header">
-        <!-- social media links -->
-        <div class="header__socials">
-            <!-- icon for filled mail along with a link -->
-            <a href=""><i class="ri-mail-fill"></i></a>
-            <a href=""><i class="ri-github-fill"></i></a>
-            <a href=""><i class="ri-linkedin-fill"></i></a>
-        </div>
-        <nav>
-            <div class="nav__bar">
-                <div class="nav__header">
-                    <div class="nav__logo">
-                        <a href="">ChAbSy<span>.</span></a>
-                        </div>
-                        <div class="nav__menu__btn"id="menu-btn">
-                            <span><i class="ri-menu-line"></i></span>
-                        </div>
-                </div>
-                <!-- emmet abbreviation for the ul below ul.nav__links#nav-links -->
-                <ul class="nav__links" id="nav-links">
-                    <li class="link"><a href="#home">Home</a></li>
-                    <li class="link"><a href="#about">About</a></li>
-                    <li class="link"><a href="#project">Project</a></li>
-                    <li class="link"><a href="#service">Services</a></li>
-                    <li class="link"><a href="#client">Clients</a></li>
-                    <li class="link"><a href="#blog">Blog</a></li>
-                    <li class="link-btn"><a href="#contact">Contact</a></li>
-                </ul>
+      <!-- social media links -->
+      <div class="header__socials">
+        <!--  -->
+        <a href=""><i class="ri-mail-fill"></i></a>
+        <a href=""><i class="ri-github-fill"></i></a>
+        <a href=""><i class="ri-linkedin-fill"></i></a>
+      </div>
+      <nav>
+        <div class="nav__bar">
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="">ChAbSy<span>.</span></a>
             </div>
-        </nav>
-        
+            <div class="nav__menu__btn" id="menu-btn">
+              <span><i class="ri-menu-line"></i></span>
+            </div>
+          </div>
+          <!-- emmet abbreviation for the ul below ul.nav__links#nav-links -->
+          <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#about">About</a></li>
+            <li class="link"><a href="#project">Project</a></li>
+            <li class="link"><a href="#service">Services</a></li>
+            <li class="link"><a href="#client">Clients</a></li>
+            <li class="link"><a href="#blog">Blog</a></li>
+            <li class="link-btn"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="/assets/example1.jpg" alt="header" srcset="" />
+        </div>
+        <div class="header__content">
+          <h4>Creating Digital Greatness</h4>
+          <h1>Hi, This is Sydney and this is my portfolio!</h1>
+          <p>
+            I am an upcoming world class web developer with a flair and passion
+            for turning lines of code into captivating online experiences.My
+            journey in the digital realm began not longer than two years ago,
+            and I've since honed my skills in front-end development continuously
+            up till date.
+          </p>
+          <button class="btn">Hire Me Now</button>
+        </div>
+      </div>
     </header>
+
+    <section class="section section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/example2.jpg" alt="about" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Hello World, Sydney here again</h2>
+        <p>
+          A passionate web developer with a creative flair and a knack for
+          turning visions into reality. My journey in web development began with
+          a fascination for coding and design, and it has evolved into a career
+          where I focus on blending aesthetics with functionality
+        </p>
+        <h4>
+          I design and build digital experiences that prioritize usability while
+          embracing modern tech practices. By blending clean aesthetics with
+          performance-driven development, I craft websites that engage users and
+          deliver measurable results — always pushing beyond.
+        </h4>
+        <div class="about__btns">
+          <a href="new resume/cv link" download class="download__btn"
+            >Download my CV</a
+          >
+          <a href=""><i class="ri-mail-fill"></i></a>
+          <a href=""><i class="ri-github-fill"></i></a>
+          <a href=""><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- plugin from the website scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
