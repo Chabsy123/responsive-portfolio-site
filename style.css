@@ -49,7 +49,7 @@
 }
 
 .btn{
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     outline: none;
     border: none;
     font-size: 1rem;
@@ -74,7 +74,6 @@ body{
     scroll-behavior: smooth;
 }
 
-
 body{
     font-family: "Poppins", sans-serif;
     color: var(--white);
@@ -87,7 +86,7 @@ body{
 }
 
 .header__socials{
-    display: flex;
+    display: none;
     position: absolute;
     right: 0;
     top: 50%;
@@ -102,4 +101,78 @@ body{
     font-size: 1.5rem;
     color: var(--secondary-color);
     background-image: var(--gradient);
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav__bar{
+    position: relative;
+    isolation: isolate;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav__header{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+
+.nav__logo a{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav__logo a span{
+    color: var(--primary-color-dark);
+}
+
+.nav__links{
+    position: absolute;
+    top: 68px;
+    left:0;
+    width: 100%;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    transform: translateY(-100%);
+    background-color: var(--secondary-color-light);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.nav__links.open{
+    transform: translateY(0);
+}
+
+.link a{
+    transition: .3s;
+}
+
+.link.btn a{
+    color: var(--secondary-color) !important;
+}
+
+.link a:hover{
+    color: var(--primary-color-dark);
+}
+
+.nav__menu__btn {
+    font-size: 1.5rem;
 }
