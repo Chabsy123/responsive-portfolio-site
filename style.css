@@ -32,6 +32,7 @@
     font-size:2.5rem;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .section__subheader{
@@ -213,5 +214,91 @@ nav{
 
 .header__content p{
     margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.about__container{
+    display: grid;
+    gap:4rem;
+}
+
+.about__content p{
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.about__content h4{
+    padding: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-light);
+    background-color: var(--secondary-color-light);
+    border-left:2px solid var(--primary-color-dark);
+    border-right:2px solid var(--primary-color-dark);
+    border-radius: 5px;
+}
+
+.about__btns{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about__btns .download__btn{
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+}
+
+.about__btns a{
+    padding: 3px 8px;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    background-image: var(--gradient);
+    border-radius: 100%;
+}
+
+.banner__container{
+    padding-block: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.banner__card{
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: var(--secondary-color-light);
+    border-radius: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.banner__card:hover{
+    border-color: var(--primary-color-dark);
+}
+
+.banner__card span{
+    padding: 4px 10px;
+    font-size: 1.5rem;
+    background-color: var(--secondary-color-dark);
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.banner__card:hover span{
+    color: var(--secondary-color-dark);
+    background-image: var(--gradient);
+}
+
+.banner__card h4{
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.banner__card p {
     color: var(--text-light);
 }
