@@ -17,6 +17,9 @@ navLinks.addEventListener("click", (e) => {
     menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
+// changes the highlighted active button to the one that is clicked on at that time 
+const mixer = mixitup(".project__grid");
+
 const scrollRevealOption = {
     distance: "50px",
     origin: "bottom",
